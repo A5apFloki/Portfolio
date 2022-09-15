@@ -14,7 +14,7 @@ function Navbar(){
        <GoDeviceDesktop className='logooo'/>
        <ul className={Mobile? "nav-links-mobile":"nav-links"} onClick={() =>setMobile(false)}>
      
-          <Link to='/about' >
+          <Link to='/' >
             <li>About Me</li>
           </Link>
           <Link to='/projects' >

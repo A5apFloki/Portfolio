@@ -3,6 +3,18 @@
     font-family: "Poppins", sans-serif;
     
   }
+.paracontainer{
+    display:flex;
+    flex-wrap:wrap;
+    padding-left:10%;
+    justify-content:left;
+    margin-top:3%;
+}
+.para{
+    font-size:  55px;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
+}
 .movtxt{
 display:flex;
 width: 100%;
@@ -60,11 +72,16 @@ animation: slide 10s steps(4) infinite;
     
 }
 @media (max-width: 768px) {
+    .para{
+        font-size:40px;
+        font-weight:50;
+        font-family: "Poppins", sans-serif;
+    }
     .movtxt{
         visibility: collapse;
         width: 100%;
         justify-content: center;
-        margin-top: 35%;
+        margin-top: 1%;
         }
         .movtxt .static-txts{
             color:rgb(0, 0, 0);
