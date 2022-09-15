@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    
+  }
+.movtxt{
+display:flex;
+width: 100%;
+justify-content: center;
+margin-top: 5%;
+}
+.movtxt .static-txts{
+    color:rgb(0, 0, 0);
+    font-size: 60px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.movtxt .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.dynamic-txts li{
+white-space: nowrap;
+list-style: none;
+color: #000000;
+font-size: 60px;
+font-weight: 500;
+position: relative;
+top: 0;
+animation: slide 10s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+.dynamic-txts li span{
+    position:relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #f8f6f5;
+    border-left: 2px solid #000000;
+    animation: typing 2.5s steps(10) infinite;
+}
+@keyframes typing {
+    40%, 60%{left:calc(100% + 30px);
+    }100%{left: 0;}
+    
+}
+@media (max-width: 768px) {
+    .movtxt{
+        visibility: collapse;
+        width: 100%;
+        justify-content: center;
+        margin-top: 35%;
+        }
+        .movtxt .static-txts{
+            color:rgb(0, 0, 0);
+            font-size: 30px;
+            visibility: collapse;
+            font-weight: 300;
+            white-space: nowrap;
+        }
+        .movtxt .dynamic-txts{
+            margin-left: 15px;
+            height: 30px;
+            visibility: collapse;
+            line-height: 50px;
+            white-space: nowrap;
+            overflow: hidden;
+        
+        }
+        .dynamic-txts li{
+        display:flex;
+        visibility: collapse;
+        flex-direction: row;
+        white-space: nowrap;
+        list-style: none;
+        color: #000000;
+        font-size: 30px;
+        font-weight: 200;
+        position: relative;
+        top: 0;
+        animation: slide 10s steps(4) infinite;
+        }
+        
+        @keyframes slide {
+            100%{
+                top: -360px;
+            }
+        }
+        .dynamic-txts li span{
+            position:relative;
+            margin: 5px 0;
+            visibility: collapse;
+            line-height: 50px;
+        }
+        .dynamic-txts li span::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            visibility: collapse;
+            height: 100%;
+            width: 100%;
+            background: #f8f6f5;
+            border-left: 2px solid #000000;
+            animation: typing 2.5s steps(10) infinite;
+        }
+        @keyframes typing {
+            40%, 60%{left:calc(100% + 30px);
+            }100%{left: 0;}
+            
+        }
+
+}

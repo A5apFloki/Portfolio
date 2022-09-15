@@ -11,29 +11,33 @@ a {
 li {
   list-style-type: none;
 }
-.navbar {
+.navbarrr {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 10vh;
   padding-left: 6rem;
-  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
+  z-index: 9999;
 }
-.logo {
-  font-size: 30px;
+.logooo {
+  font-size: 24px;
   display: flex;
+  background-color: rgba(255, 255, 255, 0);
   justify-content: flex-start;
   align-items: center;
 }
 .nav-links {
   display: flex;
+  background-color: rgba(255, 255, 255, 0);
   justify-content: flex-end;
   width: 75%;
 }
 .container {
+    background-color: rgba(255, 255, 255, 0);
     max-width: 90%;
     margin: -24px;
     display: flex;
+    position: sticky;
     justify-content: space-between;
     align-items: center;
 
@@ -41,8 +45,10 @@ li {
 .nav-links li {
   color: black;
   font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
   padding: 10px 20px;
   margin: 0 10px;
+  position: inherit;
   cursor: pointer;
   white-space: nowrap;
   text-transform: capitalize;
@@ -65,9 +71,8 @@ button {
   background: none;
 }
 @media (max-width: 768px) {
-  .logo {
+  .logooo {
     display: flex;
-    position: absolute;
     top: 15px;
     left: 35px;
   }
@@ -80,6 +85,7 @@ button {
     position: absolute;
     text-decoration: none;
     display: block;
+    z-index: 9999;
     list-style: none;
     white-space: nowrap;
     box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -90,6 +96,7 @@ button {
     background-color: white;
   }
   ul li {
+    z-index: 99999;
     text-decoration: none;
     padding: 20px;
     width: 100%;

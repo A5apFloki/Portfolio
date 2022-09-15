@@ -2,17 +2,18 @@ import {Link } from "react-router-dom";
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa"
 import { VscChromeClose } from "react-icons/vsc"
+import { GoDeviceDesktop} from "react-icons/go"
 import "./navbar.css";
 
 function Navbar(){
     const [ Mobile , setMobile ] = useState ( false )
 
     return(
-       <nav className='navbar'>
+       <nav className='navbarrr'>
        <div className='container'>
-       <h1 className='logo'>Hello!</h1>
+       <GoDeviceDesktop className='logooo'/>
        <ul className={Mobile? "nav-links-mobile":"nav-links"} onClick={() =>setMobile(false)}>
-
+     
           <Link to='/about' >
             <li>About Me</li>
           </Link>
