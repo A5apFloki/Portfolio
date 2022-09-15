@@ -11,8 +11,13 @@
     margin-top:3%;
 }
 .para{
-    font-size:  55px;
-    font-weight: 200;
+    font-size:  40px;
+    font-weight: 150;
+    font-family: "Poppins", sans-serif;
+}
+.para1{
+    font-size:  50px;
+    font-weight: 150;
     font-family: "Poppins", sans-serif;
 }
 .movtxt{
@@ -73,7 +78,7 @@ animation: slide 10s steps(4) infinite;
 }
 @media (max-width: 768px) {
     .para{
-        font-size:40px;
+        font-size:25px;
         font-weight:50;
         font-family: "Poppins", sans-serif;
     }

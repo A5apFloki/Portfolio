@@ -15,8 +15,10 @@ function About() {
         </ul>
         </div>
        <div className="paracontainer">
-         <header className="para">Hello! 👋
-         <p className="para">Am Gouaidia Seif Eddine a front end developer, Designer, Student and a Freelancer located in      Annaba Algeria .</p></header>
+         <header className="para1">Hello! 👋
+         <p className="para">Am Gouaidia Seif Eddine afront end developer, Designer,</p>
+         <p className="para">a college student and a Freelancer</p> 
+         <p className="para">located in Annaba Algeria.</p></header>
          
        </div>
 
