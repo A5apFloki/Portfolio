@@ -1,7 +1,6 @@
 import {Link } from "react-router-dom";
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa"
-import { AiOutlineGlobal } from "react-icons/ai"
 import { VscChromeClose } from "react-icons/vsc"
 import "./navbar.css";
 
