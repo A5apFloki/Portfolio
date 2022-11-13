@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
     font-family: "Poppins", sans-serif;
-    
   }
 .paracontainer{
     display:flex;
     flex-wrap:wrap;
-    padding-left:10%;
+    padding-left:5%;
     padding-right:10%;
     justify-content:left;
     margin-top:3%;
+    flex-direction: column;
+}
+.parag{    
+    margin-top: 1rem;
+    margin-bottom: 0rem;
 }
 .para{
-    font-size:  40px;
-    font-weight: 150;
+    font-size:  30px;
+    font-weight: 500;
     font-family: "Poppins", sans-serif;
 }
 .para1{
@@ -25,7 +30,7 @@
 display:flex;
 width: 100%;
 justify-content: center;
-margin-top: 5%;
+padding-top: 5%;
 }
 .movtxt .static-txts{
     color:rgb(0, 0, 0);
@@ -68,7 +73,7 @@ animation: slide 10s steps(4) infinite;
     left: 0;
     height: 100%;
     width: 100%;
-    background: #f8f6f5;
+    background: #a798f9;
     border-left: 2px solid #000000;
     animation: typing 2.5s steps(10) infinite;
 }
@@ -78,22 +83,40 @@ animation: slide 10s steps(4) infinite;
     
 }
 @media (max-width: 768px) {
+    .para1{
+        font-size:  50px;
+        font-weight: 150;
+        margin-top: 4rem;
+        font-family: "Poppins", sans-serif;
+    }
+    .parag{    
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .paracontainer{
+        display:flex;
+        flex-wrap:wrap;
+        padding-left:10%;
+        padding-right:10%;
+        justify-content:left;
+        margin-top:3%;
+    }
     .para{
-        font-size:25px;
-        font-weight:50;
+        font-size:18px;
+        font-weight:700;
         font-family: "Poppins", sans-serif;
     }
     .movtxt{
         visibility: collapse;
         width: 100%;
         justify-content: center;
-        margin-top: 1%;
+        
         }
         .movtxt .static-txts{
             color:rgb(0, 0, 0);
-            font-size: 30px;
+            font-size: 20px;
             visibility: collapse;
-            font-weight: 300;
+            font-weight: 200;
             white-space: nowrap;
         }
         .movtxt .dynamic-txts{
@@ -137,8 +160,8 @@ animation: slide 10s steps(4) infinite;
             visibility: collapse;
             height: 100%;
             width: 100%;
-            background: #f8f6f5;
-            border-left: 2px solid #000000;
+            background: #a798f9;
+            border-left: 2px solid #a798f9;
             animation: typing 2.5s steps(10) infinite;
         }
         @keyframes typing {
